@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    float a;
-    scanf("%f",&a);
+    double a;
+    scanf("%ld",&a);
     printf("You entered: %f", a);
     return 0;
 }
