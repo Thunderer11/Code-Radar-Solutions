@@ -2,7 +2,7 @@
 
 int main() {
     int a;
-    if(!!a&&!(a>0)){
+    if(!!a&&!(a<1)){
         printf("True");
     }
     else{
