@@ -14,9 +14,9 @@ int main()
 
     /* Perform bitwise AND with msb and num */
     if(num & msb)
-        printf("MSB of %d is set (1).", num);
+        printf("Set");
     else
-        printf("MSB of %d is unset (0).", num);
+        printf("Not Set");
 
     return 0;
 }
