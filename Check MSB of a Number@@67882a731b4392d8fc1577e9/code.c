@@ -5,7 +5,6 @@ int main()
 {
     int num, msb;
 
-    printf("Enter any number: ");
     scanf("%d", &num);
 
     msb = 1 << (BITS - 1);
