@@ -28,7 +28,6 @@ void printDiamond(int n) {
 
 int main() {
     int n;
-    printf("Enter the number of rows for the diamond pattern: ");
     scanf("%d", &n);
     printDiamond(n);
     return 0;
