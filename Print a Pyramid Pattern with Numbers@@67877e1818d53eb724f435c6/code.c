@@ -1,15 +1,18 @@
-#include<stdio.h>
-int main(){
-    int a;
-    scanf("%d",&a);
-    for(int i=1;i<=a;i++){
-        for(int j=1;j<=n-i;j++){
-            printf(" ");
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {  // Loop for rows
+        for (int space = 1; space <= n - i; space++) {  
+            printf("  ");  // Printing spaces for pyramid alignment
         }
-        for(int k=1;k<=(2*i-1);k++){
-            printf("%d ",j);
+        for (int j = 1; j <= 2 * i - 1; j++) {  
+            printf("%d ", j);  // Printing numbers
         }
-        printf("\n");
+        printf("\n");  // New line after each row
     }
+
     return 0;
 }
