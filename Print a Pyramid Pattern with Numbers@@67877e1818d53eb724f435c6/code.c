@@ -6,13 +6,14 @@ int main() {
 
     for (int i = 1; i <= n; i++) {  // Loop for rows
         for (int space = 1; space <= n - i; space++) {  
-            printf("  ");  // Printing spaces for pyramid alignment
+            printf(" ");  // Printing spaces for pyramid alignment
         }
-        for (int j = 1; j <= 2 * i - 1; j++) {  
+        for (int j = 1; j <= i; j++) {  
             printf("%d ", j);  // Printing numbers
         }
-        printf("\n");  // New line after each row
+        printf("\n");  // Move to the next line
     }
 
     return 0;
 }
+
