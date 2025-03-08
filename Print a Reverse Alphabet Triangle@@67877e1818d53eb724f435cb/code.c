@@ -5,8 +5,8 @@ int main(){
     for(int i=0;i<a;i++){
         char b='A';
         for(int j=0;j<a-i;j++){
-            b++;
             printf("%c ",b);
+            b++;
         }
         printf("\n");
     }
