@@ -39,5 +39,3 @@ int main() {
     print_palindromic_acute_triangle(n);
     return 0;
 }
-
-}
