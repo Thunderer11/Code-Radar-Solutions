@@ -10,10 +10,10 @@ void print_spaces(int n, int row) {
 // Function to print palindromic pattern
 void print_palindromic_row(int row) {
     for (int i = 1; i <= row; i++) {
-        printf("%d ", i);
+        printf("%d", i);
     }
     for (int i = row - 1; i >= 1; i--) {
-        printf("%d ", i);
+        printf("%d", i);
     }
     printf("\n");
 }
