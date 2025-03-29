@@ -3,23 +3,25 @@
 // Function to print spaces for alignment
 void print_spaces(int n, int row) {
     for (int i = 0; i < (n - row); i++) {
-        printf("  ");
+        printf(" ");
     }
 }
 
-// Function to print palindromic pattern
+// Function to print palindromic numbers
 void print_palindromic_row(int row) {
+    // Print increasing sequence
     for (int i = 1; i <= row; i++) {
         printf("%d", i);
     }
+    // Print decreasing sequence
     for (int i = row - 1; i >= 1; i--) {
-        printf("%d ", i);
+        printf("%d", i);
     }
     printf("\n");
 }
 
-// Function to print the palindromic acute triangle
-void print_palindromic_acute_triangle(int n) {
+// Function to generate the palindromic triangle
+void print_palindromic_triangle(int n) {
     for (int row = 1; row <= n; row++) {
         print_spaces(n, row);
         print_palindromic_row(row);
@@ -28,6 +30,7 @@ void print_palindromic_acute_triangle(int n) {
 
 int main() {
     int n;
+    printf("Enter the number of rows: ");
     scanf("%d", &n);
 
     if (n < 1) {
@@ -35,6 +38,6 @@ int main() {
         return 1;
     }
 
-    print_palindromic_acute_triangle(n);
+    print_palindromic_triangle(n);
     return 0;
 }
