@@ -28,7 +28,6 @@ void print_palindromic_acute_triangle(int n) {
 
 int main() {
     int n;
-    printf("Enter the number of rows for the palindromic acute triangle: ");
     scanf("%d", &n);
 
     if (n < 1) {
