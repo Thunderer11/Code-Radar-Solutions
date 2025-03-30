@@ -1,11 +1,11 @@
 #include<stdio.h>
 int checkArraySort(int arr[],int n){
     for(int i=1;i<=n;i++){
-        if(arr[i]<arr[i+1]){
-            return 1;
+        if(arr[i]<arr[i-1]){
+            return 0;
         }
     }
-    return 0;
+    return 1;
 }
 int main(){
     int n;
