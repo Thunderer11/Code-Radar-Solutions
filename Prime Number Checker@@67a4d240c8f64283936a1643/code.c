@@ -1,10 +1,10 @@
 void isPrime(int a){
-    for(int i=1;i<=a;i++){
+    if(a<2)
+        return 1;
+    for(int i=1;i*i<=a;i++){
         if(a%i==0){
-            printf("1");
-        }
-        else{
-            printf("0");
+            return 0;
         }
     }
+    return 1;
 }
