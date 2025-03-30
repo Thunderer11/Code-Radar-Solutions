@@ -1,4 +1,4 @@
-void isPrime(int a){
+int isPrime(int a){
     if(a<2)
         return 0;
     for(int i=1;i*i<=a;i++){
