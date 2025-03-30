@@ -4,6 +4,6 @@ int isPrime(int a){
     for(int i=2;i*i<=a;i++){
         if(a%i==0)
             return 1;
-        else return 0;
     }
+    return 0;
 }
